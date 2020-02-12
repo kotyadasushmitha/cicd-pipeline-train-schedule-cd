@@ -8,7 +8,7 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
-        stage('DeployToStaging') {
+        stage('DeployToProduction   ') {
             when {
                 branch 'master'
             }
@@ -41,7 +41,7 @@ pipeline {
     
     
                 
-         stage('DeployToStaging') {
+         stage('DeployToProduction') {
             when {
                 branch 'master'
             }
